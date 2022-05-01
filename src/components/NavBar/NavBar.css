@@ -1,0 +1,40 @@
+.phone-landingPage {
+  width: 425px;
+  position: fixed;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 290px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: larger;
+  font-weight: bolder;
+  position: fixed;
+}
+.Aboutnav {
+  transform: translate(-1.5rem, 0.5rem);
+  text-decoration: none;
+}
+.Aboutnav:hover {
+  filter: brightness(1.5);
+}
+.Shopnav {
+  transform: translate(-1.5rem, 6rem);
+  text-decoration: none;
+}
+.Shopnav:hover {
+  filter: brightness(1.5);
+}
+.Worknav {
+  transform: translate(-1.5rem, 12rem);
+  text-decoration: none;
+}
+.Worknav:hover {
+  filter: brightness(1.5);
+}

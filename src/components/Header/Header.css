@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  justify-content: flex-end;
+}
+.logo-img {
+  width: 225px;
+}
+.logo-img:hover {
+  filter: brightness(1.5);
+}
+@media only screen and (max-width: 576px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+}
