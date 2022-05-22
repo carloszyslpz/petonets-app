@@ -1,7 +1,12 @@
 import "./Shop.css";
+import ItemListContainer from "../../ItemListContainer/ItemListContainer";
 
 const Shop = () => {
-  return <div className="shop">Shop</div>;
+  return (
+    <div>
+      <ItemListContainer />
+    </div>
+  );
 };
 
 export default Shop;

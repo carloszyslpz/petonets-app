@@ -11,10 +11,15 @@ p {
   width: 400px;
   padding: 30px;
   font-size: large;
-  font-weight: bold;
   color: purple;
 }
-
+.hello {
+  color: white;
+  transform: translate(-6.5rem, -7.5rem);
+  font-size: 50px;
+  font-weight: lighter;
+  position: absolute;
+}
 @media only screen and (max-width: 1000px) {
   p {
     font-size: medium;

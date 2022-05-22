@@ -1,0 +1,25 @@
+.productsList {
+  display: flex;
+  justify-content: space-between;
+  grid-column-gap: 5rem;
+  grid-row-gap: 2rem;
+}
+.typoContent {
+  text-decoration: underline white;
+  font-size: 20px;
+  color: #b8a2c2;
+}
+.imgShop {
+  width: 350px;
+  transition: transform 0.75s;
+}
+.card:hover .imgShop {
+  transform: scale(1.15);
+}
+@media only screen and (max-width: 640px) {
+  .productsList {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 2rem;
+  }
+}

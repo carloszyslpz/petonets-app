@@ -14,25 +14,24 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: larger;
-  font-weight: bolder;
-  position: fixed;
+  position: absolute;
 }
 .Aboutnav {
-  transform: translate(-1.5rem, 0.5rem);
+  transform: translate(-1.5rem, 3vh);
   text-decoration: none;
 }
 .Aboutnav:hover {
   filter: brightness(1.5);
 }
 .Shopnav {
-  transform: translate(-1.5rem, 6rem);
+  transform: translate(-1.5rem, 7rem);
   text-decoration: none;
 }
 .Shopnav:hover {
   filter: brightness(1.5);
 }
 .Worknav {
-  transform: translate(-1.5rem, 12rem);
+  transform: translate(-1.5rem, 13rem);
   text-decoration: none;
 }
 .Worknav:hover {
