@@ -1,15 +1,15 @@
 import "../ItemDetailContainer/ItemDetail.css";
 import ItemCount from "../ItemDetailContainer/ItemCount/ItemCount";
-import { CartContext } from "../../Context/CartContext";
-import { useContext, useState } from "react";
+//import { CartContext } from "../../Context/CartContext";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
+
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
-import IconButton from "@mui/material/IconButton";
+
 import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Button } from "@mui/material";
