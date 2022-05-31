@@ -19,6 +19,7 @@
 .Aboutnav {
   transform: translate(-1.5rem, 3vh);
   text-decoration: none;
+  color: purple;
 }
 .Aboutnav:hover {
   filter: brightness(1.5);
@@ -26,6 +27,7 @@
 .Shopnav {
   transform: translate(-1.5rem, 7rem);
   text-decoration: none;
+  color: purple;
 }
 .Shopnav:hover {
   filter: brightness(1.5);
@@ -33,6 +35,7 @@
 .Worknav {
   transform: translate(-1.5rem, 13rem);
   text-decoration: none;
+  color: purple;
 }
 .Worknav:hover {
   filter: brightness(1.5);

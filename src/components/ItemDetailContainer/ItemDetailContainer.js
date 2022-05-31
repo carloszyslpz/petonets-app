@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import ItemDetail from "../ItemDetailContainer/ItemDetail";
+import ItemDetail from "./ItemDetail";
 import "../Spinner/Spinner.css";
 import { db } from "../../Firebase/FirebaseConfig";
 import {
@@ -21,7 +21,7 @@ const ItemDetailContainer = () => {
   }, 1500);
 
   useEffect(() => {
-    const getShop = async () => {
+    const getProducts = async () => {
       const productRef = collection(db, "shop");
       const q = query(productRef, where(documentId(), "==", id));
       const docs = [];
@@ -32,7 +32,7 @@ const ItemDetailContainer = () => {
       });
       setProductData(docs);
     };
-    getShop();
+    getProducts();
   }, [id]);
 
   return (
@@ -40,9 +40,13 @@ const ItemDetailContainer = () => {
       {loading ? (
         <div className="spin"></div>
       ) : (
-        <div>
-          <ItemDetail data={productData} />
-        </div>
+        productData.map((detail) => {
+          return (
+            <div key={detail.id}>
+              <ItemDetail data={detail} />
+            </div>
+          );
+        })
       )}
     </div>
   );

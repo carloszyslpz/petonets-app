@@ -2,7 +2,6 @@ import "../ItemCount/ItemCount.css";
 import { IconButton, Button } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 
 const ItemCount = ({ onAdd, counter, setCounter, stock }) => {
   const counterUp = () => {
@@ -13,11 +12,11 @@ const ItemCount = ({ onAdd, counter, setCounter, stock }) => {
   };
 
   return (
-    <div>
-      <div className="container-count">
+    <div className="countButton">
+      <div className="count">
         <IconButton
           onClick={counterDown}
-          style={{ visibility: counter <= 1 && "hidden" }}
+          style={{ visibility: counter <= 0 && "hidden" }}
           aria-label="delete"
           sx={{ padding: 0 }}
         >
@@ -33,9 +32,8 @@ const ItemCount = ({ onAdd, counter, setCounter, stock }) => {
           <AddIcon sx={{ fontSize: 24 }} />
         </IconButton>
       </div>
-      <Button onClick={onAdd}>
-        <p>Agregar A Carrito</p>
-        <AddShoppingCartIcon sx={{ ml: 1.2 }} />
+      <Button onClick={onAdd} variant="outlined">
+        Agregar A Carrito
       </Button>
     </div>
   );

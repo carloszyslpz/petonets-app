@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //COMPONENTS
 import Header from "./components/Header/Header";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 //VIEWS
 import Home from "./components/Views/Home/Home";
 import AboutMe from "./components/Views/About/AboutMe";
@@ -16,8 +17,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/AboutMe" element={<AboutMe />} />
         <Route path="/Shop" element={<Shop />} />
+        <Route path="/:Detalle/:id" element={<ItemDetailContainer />} />
         <Route path="/Work" element={<Work />} />
-        <Route path="/Cart" />
       </Routes>
     </Router>
   );
