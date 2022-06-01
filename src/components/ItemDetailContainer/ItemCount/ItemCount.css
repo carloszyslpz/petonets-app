@@ -1,6 +1,7 @@
 .count {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-radius: 21px 21px 21px 21px;
   border: 3px solid #e7c5d2;
   margin: 20px;
