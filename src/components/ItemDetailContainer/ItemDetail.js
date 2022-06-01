@@ -49,13 +49,13 @@ const ItemDetail = ({ data }) => {
         <div></div>
         <CardContent className="detailContent">
           <Typography variant="body1" color="text.primary">
-            <h1>{data.title}</h1>
+            <h1 style={{ color: "#b8a2c2" }}>{data.title}</h1>
           </Typography>
           <Typography variant="body1" color="text.secondary">
-            <h3>{data.price} €</h3>
+            <h3 style={{ color: "#deafbf" }}>{data.price} €</h3>
           </Typography>
           <CardActions disableSpacing>
-            <FavoriteIcon className="favIcon" />
+            <FavoriteIcon className="favIcon" sx={{ color: "#b8a2c2" }} />
           </CardActions>
           {visible ? (
             <ItemCount
@@ -69,7 +69,11 @@ const ItemDetail = ({ data }) => {
               <Link to={"/Shop"}>
                 <Button
                   variant="outlined"
-                  style={{ textDecoration: "underline white" }}
+                  style={{
+                    textDecoration: "underline white",
+                    color: "#b8a2c2",
+                    borderColor: "#e7c5d2",
+                  }}
                 >
                   Seguir Comprando
                 </Button>
@@ -77,7 +81,11 @@ const ItemDetail = ({ data }) => {
               <Link to={"/"}>
                 <Button
                   variant="outlined"
-                  style={{ textDecoration: "underline white" }}
+                  style={{
+                    textDecoration: "underline white",
+                    color: "#b8a2c2",
+                    borderColor: "#e7c5d2",
+                  }}
                 >
                   Terminar Mi Compra
                 </Button>

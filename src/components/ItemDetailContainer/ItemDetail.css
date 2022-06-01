@@ -20,11 +20,12 @@
   display: flex;
   flex-direction: column;
   justify-items: center;
+  margin-top: -1rem;
 }
 @media only screen and (max-width: 640px) {
   .detailContent {
     margin-top: -5rem;
-    margin-right: 7.5rem;
+    margin-right: 4rem;
   }
 }
 .imgDetail {
@@ -38,7 +39,7 @@
   .detailText {
     display: flex;
     justify-content: center;
-    margin: -2rem;
+    margin: -1rem;
   }
 }
 .linkBtn {
@@ -47,8 +48,11 @@
 }
 @media only screen and (max-width: 640px) {
   .linkBtn {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    column-gap: 0;
+    width: 400px;
+    margin-left: -1rem;
   }
 }
 .favIcon {

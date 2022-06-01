@@ -32,7 +32,11 @@ const ItemCount = ({ onAdd, counter, setCounter, stock }) => {
           <AddIcon sx={{ fontSize: 24 }} />
         </IconButton>
       </div>
-      <Button onClick={onAdd} variant="outlined">
+      <Button
+        onClick={onAdd}
+        variant="outlined"
+        sx={{ color: "#b8a2c2", borderColor: "#e7c5d2" }}
+      >
         Agregar A Carrito
       </Button>
     </div>
