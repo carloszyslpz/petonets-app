@@ -29,8 +29,8 @@ const ItemDetail = ({ data }) => {
   };
   const onAdd = () => {
     Swal.fire(
-      "Good job!",
-      `You have added ${counter} of ${data.title} to the cart`,
+      "¡Perfecto!",
+      `Agregaste ${counter} "${data.title}" al carrito`,
       "success"
     );
     view();
@@ -52,10 +52,10 @@ const ItemDetail = ({ data }) => {
             <h1>{data.title}</h1>
           </Typography>
           <Typography variant="body1" color="text.secondary">
-            <h3>€ {data.price}</h3>
+            <h3>{data.price} €</h3>
           </Typography>
           <CardActions disableSpacing>
-            <FavoriteIcon sx={{ ml: 2.5 }} />
+            <FavoriteIcon className="favIcon" />
           </CardActions>
           {visible ? (
             <ItemCount
@@ -65,17 +65,27 @@ const ItemDetail = ({ data }) => {
               stock={data.stock}
             />
           ) : (
-            <div>
+            <div className="linkBtn">
               <Link to={"/Shop"}>
-                <Button>Seguir Comprando</Button>
+                <Button
+                  variant="outlined"
+                  style={{ textDecoration: "underline white" }}
+                >
+                  Seguir Comprando
+                </Button>
               </Link>
               <Link to={"/"}>
-                <Button>Terminar Mi Compra</Button>
+                <Button
+                  variant="outlined"
+                  style={{ textDecoration: "underline white" }}
+                >
+                  Terminar Mi Compra
+                </Button>
               </Link>
             </div>
           )}
         </CardContent>
-        <CardContent>
+        <CardContent className="detailText">
           <Typography paragraph>{data.description}</Typography>
         </CardContent>
       </Card>
