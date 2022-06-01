@@ -1,6 +1,6 @@
 .phone-landingPage {
   width: 425px;
-  position: fixed;
+  position: absolute;
 }
 .contenedor {
   display: flex;
