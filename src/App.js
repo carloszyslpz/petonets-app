@@ -6,8 +6,8 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 //VIEWS
 import Home from "./components/Views/Home/Home";
 import AboutMe from "./components/Views/About/AboutMe";
-import Shop from "./components/Views/Shop/Shop";
 import Work from "./components/Views/Work/Work";
+import Rabbit from "./components/Views/Rabbit/Rabbit";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/AboutMe" element={<AboutMe />} />
-        <Route path="/Shop" element={<Shop />} />
+        <Route path="/Rabbit" element={<Rabbit />} />
         <Route path="/:Detalle/:id" element={<ItemDetailContainer />} />
         <Route path="/Work" element={<Work />} />
       </Routes>

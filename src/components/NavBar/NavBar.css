@@ -24,12 +24,11 @@
 .Aboutnav:hover {
   filter: brightness(1.5);
 }
-.Shopnav {
+.Rabbitnav {
   transform: translate(-1.5rem, 7rem);
   text-decoration: none;
-  color: purple;
 }
-.Shopnav:hover {
+.Rabbitnav:hover {
   filter: brightness(1.5);
 }
 .Worknav {

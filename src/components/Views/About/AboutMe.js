@@ -14,32 +14,33 @@ const AboutMe = () => {
         <div className="spin"></div>
       ) : (
         <div className="about-container">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            nunc odio, commodo id risus vel, ultricies ultricies arcu. Etiam
-            eget diam at dolor mattis volutpat eget a risus. Suspendisse non
-            dictum ipsum. Integer quis fringilla justo.Quisque nec interdum est.
-            Sed vel sapien sagittis, volutpat leo eget, hendrerit velit. Nam
-            odio diam, fringilla quis turpis quis, sollicitudin lobortis augue.
-            Donec pharetra tempor nulla ac sollicitudin.
-          </p>
           <h1 className="hello">Hi!</h1>
           <img
             src="./Iphone-videocall.png"
             alt="Img Videocall"
             className="videocall"
           />
-          <p>
-            Etiam eu congue lectus, ac cursus diam. Suspendisse potenti.
-            Phasellus at massa ut felis cursus eleifend. Fusce at elementum
-            lorem. Proin sit amet condimentum nunc. Nam cursus est nec augue
-            auctor molestie. Integer tempor justo a tincidunt ultrices. Aliquam
-            risus nulla, imperdiet in ultrices eu, laoreet vel lacus.
-            Pellentesque feugiat augue in ligula dictum pharetra. In mattis,
-            arcu non cursus porttitor, metus elit facilisis sapien, in ornare
-            urna diam sit amet diam. Quisque sollicitudin dui in leo fermentum
-            pharetra.
-          </p>
+          <article>
+            <p>
+              My name is Dennise. i am from Mexico City, currently living in
+              Hamburg, Germany. i'm doing my Bachelor in Fine Arts in the
+              Graphic Design Department at the Hochschule für bildende Kúnste.
+            </p>
+            <p>
+              I consider myself a curious person who likes to learn new
+              techniques, as well as develop projects, both individually and in
+              collaboration with other people.
+            </p>
+            <p>
+              In my daily work, I like to use graphic design and illustration
+              together to enhance the visual experience.
+            </p>
+            <p>
+              Everyday life, nature, culture, history, movies, and TV shows, as
+              well as fashion, always inspires me for the realization of any
+              project.
+            </p>
+          </article>
         </div>
       )}
     </div>

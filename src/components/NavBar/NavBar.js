@@ -14,8 +14,8 @@ const NavBar = () => {
           <Link to={"/AboutMe"} className="Aboutnav">
             About Me
           </Link>
-          <Link to={"/Shop"} className="Shopnav">
-            Shop
+          <Link to={"/Rabbit"} className="Rabbitnav">
+            🐰✨
           </Link>
           <Link to={"/Work"} className="Worknav">
             Work

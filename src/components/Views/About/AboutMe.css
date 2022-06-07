@@ -1,6 +1,5 @@
 .about-container {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -8,14 +7,14 @@
   width: 425px;
 }
 p {
-  width: 400px;
-  padding: 30px;
-  font-size: large;
+  width: 25rem;
+  padding: 10px;
+  font-size: bolder;
   color: purple;
 }
 .hello {
   color: white;
-  transform: translate(-6.5rem, -7.5rem);
+  transform: translate(75px, -7.5rem);
   font-size: 50px;
   font-weight: lighter;
   position: absolute;
