@@ -11,15 +11,15 @@
   filter: brightness(1.5);
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1080px) {
   .logo {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-left: 9rem;
   }
   @media only screen and (max-width: 768px) {
     .logo {
-      margin-right: 2rem;
+      margin-right: 1rem;
     }
   }
   @media only screen and (max-width: 640px) {

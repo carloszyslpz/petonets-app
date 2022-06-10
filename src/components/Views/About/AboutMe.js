@@ -21,21 +21,24 @@ const AboutMe = () => {
             className="videocall"
           />
           <article>
-            <p>
-              My name is Dennise. i am from Mexico City, currently living in
-              Hamburg, Germany. i'm doing my Bachelor in Fine Arts in the
-              Graphic Design Department at the Hochschule für bildende Kúnste.
+            <p className="p1">
+              My name is Dennise. I am from Mexico City, currently living in
+              Hamburg, Germany. I'm doing my Bachelor in Fine Arts in the
+              Graphic Design Department at the Hochschule für bildende Künste.
             </p>
-            <p>
+            <br />
+            <p className="p2">
               I consider myself a curious person who likes to learn new
               techniques, as well as develop projects, both individually and in
               collaboration with other people.
             </p>
-            <p>
+            <br />
+            <p className="p3">
               In my daily work, I like to use graphic design and illustration
               together to enhance the visual experience.
             </p>
-            <p>
+            <br />
+            <p className="p4">
               Everyday life, nature, culture, history, movies, and TV shows, as
               well as fashion, always inspires me for the realization of any
               project.

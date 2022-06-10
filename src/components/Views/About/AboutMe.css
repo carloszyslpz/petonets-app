@@ -2,15 +2,16 @@
   display: flex;
   align-items: center;
 }
-
 .videocall {
   width: 425px;
+  margin-right: 5rem;
 }
 p {
-  width: 25rem;
-  padding: 10px;
-  font-size: bolder;
+  width: 30rem;
+  height: rem;
+  font-size: larger;
   color: purple;
+  box-sizing: border-box;
 }
 .hello {
   color: white;
@@ -19,36 +20,118 @@ p {
   font-weight: lighter;
   position: absolute;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1024px) {
+  p {
+    font-size: larger;
+  }
   .hello {
-    color: white;
-    transform: translate(-6.5rem, -8.5rem);
-    font-size: 50px;
-    font-weight: lighter;
+    font-size: 60px;
+    transform: translate(4.5rem, -7.5rem);
     position: absolute;
   }
 }
-
-@media only screen and (max-width: 1000px) {
-  p {
-    font-size: medium;
-  }
-}
 @media only screen and (max-width: 880px) {
-  p {
-    width: 200px;
-    padding: 10px;
-    font-size: small;
+  .videocall {
+    margin-left: -2rem;
+  }
+  .hello {
+    transform: translate(2.5rem, -7.5rem);
+    position: absolute;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+  }
+  .p1 {
+    box-sizing: border-box;
+    width: 20rem;
+    margin-bottom: 0.5rem;
+  }
+  .p2 {
+    box-sizing: border-box;
+    width: 20rem;
+    margin-bottom: 0.5rem;
+  }
+  .p3 {
+    box-sizing: border-box;
+    width: 20rem;
+    margin-bottom: 0.5rem;
+  }
+  .p4 {
+    box-sizing: border-box;
+    width: 20rem;
   }
 }
+@media only screen and (max-width: 768px) {
+  .hello {
+    transform: translate(2.75rem, -7.5rem);
+    position: absolute;
+  }
+  p {
+    margin-left: -3rem;
+  }
+  .p1 {
+    box-sizing: border-box;
+    width: 18rem;
+    font-size: 17px;
+  }
+  .p2 {
+    box-sizing: border-box;
+    width: 18rem;
+    font-size: 17px;
+  }
+  .p3 {
+    box-sizing: border-box;
+    width: 18rem;
+    font-size: 17px;
+  }
+  .p4 {
+    box-sizing: border-box;
+    width: 18rem;
+    font-size: 17px;
+  }
+}
+
 @media only screen and (max-width: 640px) {
   .about-container {
     display: flex;
     flex-direction: column;
   }
+  .videocall {
+    margin-top: -2rem;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+  }
   p {
+    margin-left: 2rem;
     width: 80%;
     padding: 10px;
     font-size: small;
+  }
+  .p1 {
+    margin-top: -3rem;
+  }
+  .p2 {
+    margin-top: -0.5rem;
+  }
+  .p3 {
+    margin-top: -0.5rem;
+  }
+  .p4 {
+    margin-top: -0.5rem;
+  }
+  .hello {
+    color: white;
+    transform: translate(-7rem, 7.5rem);
+    font-size: 50px;
+    font-weight: lighter;
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .hello {
+    font-size: 45px;
+    transform: translate(-5.5rem, 5rem);
+    position: absolute;
   }
 }

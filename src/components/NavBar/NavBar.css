@@ -20,6 +20,7 @@
   transform: translate(-1.7rem, 3.5vh);
   text-decoration: none;
   color: purple;
+  position: static;
 }
 .Aboutnav:hover {
   filter: brightness(1.5);
@@ -38,4 +39,15 @@
 }
 .Worknav:hover {
   filter: brightness(1.5);
+}
+@media only screen and (max-width: 320px) {
+  .Aboutnav {
+    transform: translate(-1.25rem, -6vh);
+  }
+  .Rabbitnav {
+    transform: translate(-1.25rem, 2.5rem);
+  }
+  .Worknav {
+    transform: translate(-1.25rem, 6.5rem);
+  }
 }
