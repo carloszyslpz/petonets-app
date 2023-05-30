@@ -1,5 +1,16 @@
 .detailContainer {
   display: flex;
+  margin: 80px;
+  width: 90%;
+}
+.typography {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.detailText {
+  width: 350px;
+  word-break: break-word;
 }
 @media only screen and (max-width: 1000px) {
   .detailContainer {
@@ -27,7 +38,7 @@
   display: flex;
   flex-direction: column;
   justify-items: center;
-  margin-top: -1rem;
+  width: 300px;
 }
 @media only screen and (max-width: 640px) {
   .detailContent {
@@ -51,7 +62,13 @@
 }
 .linkBtn {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  padding: 20px;
+}
+.linkBtn Button {
+  margin: 10px;
 }
 @media only screen and (max-width: 640px) {
   .linkBtn {

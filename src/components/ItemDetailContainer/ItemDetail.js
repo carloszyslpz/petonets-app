@@ -8,10 +8,8 @@ import Card from "@mui/material/Card";
 
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
 
 import Typography from "@mui/material/Typography";
-import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Button } from "@mui/material";
 
 const ItemDetail = ({ data }) => {
@@ -28,11 +26,17 @@ const ItemDetail = ({ data }) => {
     }
   };
   const onAdd = () => {
-    Swal.fire(
-      "¡Perfecto!",
-      `Agregaste ${counter} "${data.title}" al carrito`,
-      "success"
-    );
+    counter > 0
+      ? Swal.fire(
+          "¡Perfecto!",
+          `Agregaste ${counter} "${data.title}" al carrito`,
+          "success"
+        )
+      : Swal.fire(
+          "Error",
+          `No has agregado nada al carrito al carrito`,
+          "error"
+        );
     view();
     //addToCart(detail, counter);
   };
@@ -54,9 +58,6 @@ const ItemDetail = ({ data }) => {
           <Typography variant="body1" color="text.secondary">
             <h3 style={{ color: "#deafbf" }}>{data.price} €</h3>
           </Typography>
-          <CardActions disableSpacing>
-            <FavoriteIcon className="favIcon" sx={{ color: "#b8a2c2" }} />
-          </CardActions>
           {visible ? (
             <ItemCount
               onAdd={onAdd}
@@ -66,7 +67,7 @@ const ItemDetail = ({ data }) => {
             />
           ) : (
             <div className="linkBtn">
-              <Link to={"/Shop"}>
+              <Link to={"/Work"}>
                 <Button
                   variant="outlined"
                   style={{
